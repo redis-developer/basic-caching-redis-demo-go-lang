@@ -3,12 +3,10 @@ services:
   redis:
     image: redis:5
     container_name: caching-redis
-    hostname: redis
-    ports:
-      - 6379:6379
+    hostname: caching-redis
     restart: always
     networks:
-      - dinamicka
+      - caching-demo
   api:
     build:
       context: .
@@ -16,7 +14,6 @@ services:
       - .env
     image: caching-api
     container_name: caching-api
-    hostname: api
     ports:
     - 5000:5000
     volumes:
@@ -25,8 +22,8 @@ services:
     depends_on:
       - redis
     networks:
-      - dinamicka
+      - caching-demo
 networks:
-  dinamicka:
+  caching-demo:
     driver: bridge
 
