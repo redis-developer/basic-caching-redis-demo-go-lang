@@ -1,0 +1,32 @@
+{
+    "app_name": "Basic Redis caching example in Golang",
+    "description": "Showcases how to implement caching in Golang",
+    "type": "Building Block",
+    "contributed_by": "Redis Labs",
+    "repo_url": "https://github.com/redis-developer/basic-caching-demo-go-lang",
+    "download_url": "https://github.com/redis-developer/basic-caching-demo-go-lang/archive/main.zip",
+    "hosted_url": "",
+    "quick_deploy": "true",
+    "deploy_buttons": [
+        {
+            "heroku": "https://heroku.com/deploy?template=https://github.com/redis-developer/basic-caching-demo-go-lang"
+        },
+        {
+            "vercel": "https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fredis-developer%2Fbasic-caching-demo-go-lang&env=API_HOST,API_PORT,API_PUBLIC_PATH,REDIS_HOST,REDIS_PORT,REDIS_PASSWORD"
+        },
+        {
+            "Google": "https://deploy.cloud.run/?git_repo=https://github.com/redis-developer/basic-caching-demo-go-lang.git"
+        }
+    ],
+    "language": ["JavaScript"],
+    "redis_commands": ["SETEX","GET"],
+    "redis_features": ["caching"],
+    "redis_modules": [],
+    "app_image_urls": [
+        "https://github.com/redis-developer/basic-caching-demo-go-lang/blob/main/docs/screenshot001.png?raw=true"
+    ],
+    "youtube_url": "",
+    "special_tags": [],
+    "verticals": ["Healthcare", "Financial"],
+    "markdown": "https://raw.githubusercontent.com/redislabs-training/redis-sitesearch/master/README.md"
+}
