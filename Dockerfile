@@ -10,18 +10,24 @@ RUN CGO_ENABLED=0 GOOS=linux go build -o bin .
 
 FROM golang
 
-RUN mkdir /api
-RUN addgroup --system dinamicka
-RUN adduser --system --disabled-password --no-create-home --home /api --ingroup dinamicka dinamicka
-RUN chown dinamicka:dinamicka /api
+ENV PORT=$PORT
+ENV API_HOST=""
+ENV API_PORT=5000
+ENV API_PUBLIC_PATH=/api/public
+ENV REDIS_HOST=""
+ENV REDIS_PORT=6379
+ENV REDIS_PASSWORD=""
 
-USER dinamicka
+RUN mkdir /api
+
+WORKDIR /build
 
 COPY --from=builder /build/bin /api/
+COPY public /api/public
 
 WORKDIR /api
 
-LABEL   Name="Dinamicka Api"
+LABEL   Name="Caching Api"
 
 #Run service
 ENTRYPOINT ["./bin"]
