@@ -8,5 +8,4 @@ require (
 	github.com/go-redis/redis v6.15.9+incompatible
 	github.com/onsi/ginkgo v1.15.2 // indirect
 	github.com/onsi/gomega v1.11.0 // indirect
-	gitlab.com/teamProjects/basic-caching-demo-go-lang.git v0.0.0-20210319134159-af390a71e6f4
 )
