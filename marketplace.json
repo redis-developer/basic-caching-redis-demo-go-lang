@@ -18,7 +18,7 @@
             "Google": "https://deploy.cloud.run/?git_repo=https://github.com/redis-developer/basic-caching-demo-go-lang.git"
         }
     ],
-    "language": ["JavaScript"],
+    "language": ["Golang"],
     "redis_commands": ["SETEX","GET"],
     "redis_features": ["caching"],
     "redis_modules": [],
