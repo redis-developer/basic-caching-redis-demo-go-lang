@@ -12,9 +12,6 @@
             "heroku": "https://heroku.com/deploy?template=https://github.com/redis-developer/basic-caching-demo-go-lang"
         },
         {
-            "vercel": "https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fredis-developer%2Fbasic-caching-demo-go-lang&env=API_HOST,API_PORT,API_PUBLIC_PATH,REDIS_HOST,REDIS_PORT,REDIS_PASSWORD"
-        },
-        {
             "Google": "https://deploy.cloud.run/?git_repo=https://github.com/redis-developer/basic-caching-demo-go-lang.git"
         }
     ],
@@ -28,5 +25,5 @@
     "youtube_url": "",
     "special_tags": [],
     "verticals": ["Healthcare", "Financial"],
-    "markdown": "https://raw.githubusercontent.com/redislabs-training/redis-sitesearch/master/README.md"
+    "markdown": "https://raw.githubusercontent.com/redis-developer/basic-caching-redis-demo-go-lang/master/README.md"
 }
