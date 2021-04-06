@@ -10,8 +10,8 @@ This app returns the number of repositories a Github account has. When you first
 
 ### 1. How the data is stored:
 
-- Set the number of repositories for the account (use the user name for key): `SETEX <account name> <number of public repos> <seconds till expire>`
-  - E.g `SETEX microsoft 197 1000`
+- Set the number of repositories for the account (use the user name for key): `SETEX <account name> <seconds till expire> <number of public repos>`
+  - E.g `SETEX microsoft 3600 197`
 
 ##### Code example:
 
