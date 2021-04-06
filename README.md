@@ -1,11 +1,60 @@
-
-
-
 <div style="height: 150px"></div>
 
 # Basic Redis Caching Demo
 
 This app returns the number of repositories a Github account has. When you first search for an account, the server calls Github's API to return the response. This can take 100s of milliseconds. The server then adds the details of this slow response to Redis for future requests. When you search again, the next response comes directly from Redis cache instead of calling Github. The responses are usually usually in a millisecond or so making it blazing fast.
+
+## How it works?
+
+![How it works](docs/screenshot001.png)
+
+### 1. How the data is stored:
+
+- Set the number of repositories for the account (use the user name for key): `SETEX <account name> <number of public repos> <seconds till expire>`
+  - E.g `SETEX microsoft 197 1000`
+
+##### Code example:
+
+```Go
+err = c.r.Set(username, strconv.Itoa(repo.PublicRepos), time.Hour)
+if err != nil {
+    return nil, err
+}
+```
+
+### 2. How the data is accessed:
+
+- Get number of public repositories for an account: `GET <account name>`
+  - E.g `GET microsoft`
+
+##### Code example:
+
+```Go
+value, err := c.r.Get(username)
+if err == redis.Nil {
+    // ...
+```
+
+## How to run it locally?
+
+Make sure you set environment variables (provided in **.env.example**):
+
+```
+API_HOST=
+API_PORT=5000
+API_PUBLIC_PATH=/public
+REDIS_HOST=caching-redis
+REDIS_PORT=6379
+REDIS_PASSWORD=
+```
+
+#### Run application
+
+```sh
+go run
+```
+
+Follow: http://localhost:5000
 
 ## Try it out
 
@@ -18,36 +67,9 @@ This app returns the number of repositories a Github account has. When you first
 </p>
 
 #### Deploy to Google Cloud
+
 <p>
     <a href="https://deploy.cloud.run" target="_blank">
         <img src="https://deploy.cloud.run/button.svg" alt="Run on Google Cloud" width="150px"/>
     </a>
 </p>
-
-
-## How it works?
-
-![How it works](docs/screenshot001.png)
-
-
-### 1. How the data is stored:
-```
-SETEX microsoft 3600 1000
-```
-
-### 2. How the data is accessed:
-```
-GET microsoft
-```
-
-## How to run it locally?
-
-#### Copy `.env.sample` to create `.env`. And provide the values for environment variables if needed
-
-#### Run application
-
-```sh
-docker-compose up -d
-```
-
-Follow: http://localhost:5000

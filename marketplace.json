@@ -1,29 +1,29 @@
 {
-    "app_name": "Basic Redis caching example in Golang",
-    "description": "Showcases how to implement caching in Golang",
-    "type": "Building Block",
-    "contributed_by": "Redis Labs",
-    "repo_url": "https://github.com/redis-developer/basic-caching-demo-go-lang",
-    "download_url": "https://github.com/redis-developer/basic-caching-demo-go-lang/archive/main.zip",
-    "hosted_url": "",
-    "quick_deploy": "true",
-    "deploy_buttons": [
-        {
-            "heroku": "https://heroku.com/deploy?template=https://github.com/redis-developer/basic-caching-demo-go-lang"
-        },
-        {
-            "Google": "https://deploy.cloud.run/?git_repo=https://github.com/redis-developer/basic-caching-demo-go-lang.git"
-        }
-    ],
-    "language": ["Golang"],
-    "redis_commands": ["SETEX","GET"],
-    "redis_features": ["caching"],
-    "redis_modules": [],
-    "app_image_urls": [
-        "https://github.com/redis-developer/basic-caching-demo-go-lang/blob/main/docs/screenshot001.png?raw=true"
-    ],
-    "youtube_url": "",
-    "special_tags": [],
-    "verticals": ["Healthcare", "Financial"],
-    "markdown": "https://raw.githubusercontent.com/redis-developer/basic-caching-redis-demo-go-lang/master/README.md"
+  "app_name": "Basic Redis caching example in Golang",
+  "description": "Showcases how to implement caching in Golang",
+  "type": "Building Block",
+  "contributed_by": "Redis Labs",
+  "repo_url": "https://github.com/redis-developer/basic-caching-demo-go-lang",
+  "download_url": "https://github.com/redis-developer/basic-caching-demo-go-lang/archive/main.zip",
+  "hosted_url": "",
+  "quick_deploy": "true",
+  "deploy_buttons": [
+    {
+      "heroku": "https://heroku.com/deploy?template=https://github.com/redis-developer/basic-caching-demo-go-lang"
+    },
+    {
+      "Google": "https://deploy.cloud.run/?git_repo=https://github.com/redis-developer/basic-caching-demo-go-lang.git"
+    }
+  ],
+  "language": ["Go"],
+  "redis_commands": ["SETEX", "GET"],
+  "redis_features": ["Caching"],
+  "redis_modules": [],
+  "app_image_urls": [
+    "https://github.com/redis-developer/basic-caching-demo-go-lang/blob/main/docs/screenshot001.png?raw=true"
+  ],
+  "youtube_url": "",
+  "special_tags": [],
+  "verticals": ["Healthcare", "Financial"],
+  "markdown": "https://raw.githubusercontent.com/redis-developer/basic-caching-redis-demo-go-lang/master/README.md"
 }
