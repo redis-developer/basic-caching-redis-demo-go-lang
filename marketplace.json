@@ -3,7 +3,7 @@
   "description": "Showcases how to implement caching in Golang",
   "type": "Building Block",
   "contributed_by": "Redis Labs",
-  "repo_url": "https://github.com/redis-developer/basic-caching-demo-go-lang",
+  "repo_url": "https://github.com/redis-developer/basic-caching-redis-demo-go-lang",
   "preview_image_url": "https://raw.githubusercontent.com/redis-developer/basic-caching-redis-demo-go-lang/master/images/app_preview_image.png",
   "download_url": "https://github.com/redis-developer/basic-caching-demo-go-lang/archive/main.zip",
   "hosted_url": "",
@@ -25,6 +25,6 @@
   ],
   "youtube_url": "https://youtube.com/watch?v=Ov18gLo0Da8",
   "special_tags": [],
-  "verticals": ["Healthcare", "Financial"],
+  "verticals": ["Others"],
   "markdown": "https://raw.githubusercontent.com/redis-developer/basic-caching-redis-demo-go-lang/master/README.md"
 }
