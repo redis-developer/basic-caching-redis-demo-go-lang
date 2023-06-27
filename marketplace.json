@@ -2,7 +2,7 @@
   "app_name": "Basic Redis caching example in Golang",
   "description": "Showcases how to implement caching in Golang",
   "type": "Building Block",
-  "contributed_by": "Redis Labs",
+  "contributed_by": "Redis",
   "repo_url": "https://github.com/redis-developer/basic-caching-redis-demo-go-lang",
   "preview_image_url": "https://raw.githubusercontent.com/redis-developer/basic-caching-redis-demo-go-lang/master/images/app_preview_image.png",
   "download_url": "https://github.com/redis-developer/basic-caching-demo-go-lang/archive/main.zip",
@@ -16,15 +16,24 @@
       "Google": "https://deploy.cloud.run/?git_repo=https://github.com/redis-developer/basic-caching-demo-go-lang.git"
     }
   ],
-  "language": ["Go"],
-  "redis_commands": ["SETEX", "GET"],
-  "redis_features": ["Caching"],
-  "redis_modules": [],
+  "language": [
+    "Go"
+  ],
+  "redis_commands": [
+    "SETEX",
+    "GET"
+  ],
+  "redis_use_cases": [
+    "Caching"
+  ],
+  "redis_features": [],
   "app_image_urls": [
     "https://github.com/redis-developer/basic-caching-redis-demo-go-lang/raw/master/docs/screenshot001.png"
   ],
   "youtube_url": "https://youtube.com/watch?v=Ov18gLo0Da8",
   "special_tags": [],
-  "verticals": ["Others"],
+  "verticals": [
+    "Others"
+  ],
   "markdown": "https://raw.githubusercontent.com/redis-developer/basic-caching-redis-demo-go-lang/master/README.md"
 }
